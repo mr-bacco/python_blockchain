@@ -8,6 +8,7 @@ import hashlib
 import json
 import datetime as date
 from bac_blocks import Block 
+import time
 
 class Bac_Chain(): #these are the actual blocks used for the transactions and the creation of the bac_chain blockchain
     def __init__(self):
@@ -37,11 +38,26 @@ class Bac_Chain(): #these are the actual blocks used for the transactions and th
         return True , print("well done mrbacco, your chain is a valid blockchain ")
 
 bac = Bac_Chain() #new object from the Bac_Chain class
+'''
+add_b = int(input("please enter the number of blocks you want to generate: "))
+add_index = int(input("please enter the starting index number: "))
+add_data = str(input("please enter the data for each block: "))
 
+for i in range(1, add_b):
+    bac.add_block(Block(add_index, date.datetime.now()))
+'''
 bac.add_block(Block(1, date, 90879087))
-bac.add_block(Block(13, date, 79087))
-bac.add_block(Block(14, date, 90877))
-bac.add_block(Block(320, date, "payload, lots and lots and lots and lots and lots and lots of data here for fuck's sake"))
+time.sleep(1)
+bac.add_block(Block(2, date, 9087))
+time.sleep(1)
+bac.add_block(Block(3, date, 699400))
+time.sleep(1)
+bac.add_block(Block(3, date, 699400))
+time.sleep(1)
+bac.add_block(Block(3, date, 699400))
+time.sleep(1)
+
+
 #bac.chain[2].data = 445
 #bac.chain[2].hash = bac.chain[2].hash_calc()
 
