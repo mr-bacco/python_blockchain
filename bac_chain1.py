@@ -42,7 +42,18 @@ bac = Bac_Chain()
 
 bac.add_block(Block(1, date, 90879087))
 bac.add_block(Block(2, date, 23353))
-bac.add_block(Block(3, date, 9-923353))
+bac.add_block(Block(3, date, 46773353))
+bac.add_block(Block(4, date, 24553353))
+bac.add_block(Block(5, date, 55453))
+bac.add_block(Block(6, date, 23345453))
+bac.add_block(Block(8, date, 94523353))
+bac.add_block(Block(22, date, 5523353))
+bac.add_block(Block(32, date, 923353))
+
+
+
+
+
 
 '''
 for x in range (100):
