@@ -50,15 +50,14 @@ bac.add_block(Block(1, date, 90879087))
 time.sleep(1)
 bac.add_block(Block(2, date, 9087))
 time.sleep(1)
-bac.add_block(Block(3, date, 699400))
+bac.add_block(Block(3, date, "pippo"))
 time.sleep(1)
-bac.add_block(Block(3, date, 699400))
+bac.add_block(Block(4, date, 66477))
 time.sleep(1)
-bac.add_block(Block(3, date, 699400))
+bac.add_block(Block(5, date, "ungabunga"))
 time.sleep(1)
 
-
-#bac.chain[2].data = 445
+#bac.chain[2].data = "pippo"
 #bac.chain[2].hash = bac.chain[2].hash_calc()
 
 '''
