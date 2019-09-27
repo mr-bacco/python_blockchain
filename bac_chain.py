@@ -39,12 +39,11 @@ class Bac_Chain(): #these are the actual blocks used for the transactions and th
 
 bac = Bac_Chain() #new object from the Bac_Chain class
 
-
-def chains(add = int(input("please enter the number of blocks to create the blockhain: "))):
+def chains(blocks_to_add):
     for i in range(1, add):
         bac.add_block(Block(1, date, 90879087))
         time.sleep(1)
-    return i*add
+    return i+add
 '''
 add_b = int(input("please enter the number of blocks you want to generate: "))
 add_index = int(input("please enter the starting index number: "))
@@ -72,6 +71,12 @@ for i in range (100):
     bac = bac.add_block(i)
 bac
 '''
+
+add = int(input("please enter the number of blocks to create the blockhain: "))
+
+chains(add)
+
+
 for n in bac.chain:
     print(n)
 print(bac.validate())
