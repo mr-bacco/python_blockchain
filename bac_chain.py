@@ -38,6 +38,13 @@ class Bac_Chain(): #these are the actual blocks used for the transactions and th
         return True , print("well done mrbacco, your chain is a valid blockchain ")
 
 bac = Bac_Chain() #new object from the Bac_Chain class
+
+
+def chains(add = int(input("please enter the number of blocks to create the blockhain: "))):
+    for i in range(1, add):
+        bac.add_block(Block(1, date, 90879087))
+        time.sleep(1)
+    return i*add
 '''
 add_b = int(input("please enter the number of blocks you want to generate: "))
 add_index = int(input("please enter the starting index number: "))
@@ -45,7 +52,7 @@ add_data = str(input("please enter the data for each block: "))
 
 for i in range(1, add_b):
     bac.add_block(Block(add_index, date.datetime.now()))
-'''
+
 bac.add_block(Block(1, date, 90879087))
 time.sleep(1)
 bac.add_block(Block(2, date, 9087))
@@ -56,7 +63,7 @@ bac.add_block(Block(4, date, 66477))
 time.sleep(1)
 bac.add_block(Block(5, date, "ungabunga"))
 time.sleep(1)
-
+'''
 #bac.chain[2].data = "pippo"
 #bac.chain[2].hash = bac.chain[2].hash_calc()
 
