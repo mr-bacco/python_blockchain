@@ -43,7 +43,7 @@ def chains(blocks_to_add):
     for i in range(1, add):
         bac.add_block(Block(1, date, 90879087))
         time.sleep(1)
-    return i+add
+    return i
 '''
 add_b = int(input("please enter the number of blocks you want to generate: "))
 add_index = int(input("please enter the starting index number: "))
