@@ -44,6 +44,15 @@ def chains(blocks_to_add):
         bac.add_block(Block(1, date, 90879087))
         time.sleep(1)
     return i
+
+add = int(input("please enter the number of blocks to create the blockhain: "))
+# add_b = int(input("please enter the number of blocks you want to generate: "))
+# add_i = int(input("please enter the starting index number: "))
+# add_d = str(input("please enter the data for each block: "))
+
+chains(add)
+
+
 '''
 add_b = int(input("please enter the number of blocks you want to generate: "))
 add_index = int(input("please enter the starting index number: "))
@@ -71,10 +80,6 @@ for i in range (100):
     bac = bac.add_block(i)
 bac
 '''
-
-add = int(input("please enter the number of blocks to create the blockhain: "))
-
-chains(add)
 
 
 for n in bac.chain:

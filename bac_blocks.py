@@ -40,5 +40,5 @@ class Block(): # generation of the class called Block, every block will be an in
         string+="hash: " +str(self.hash) +"\n"
         return string
 
-# new_block = Block(100, "01/01/1970", 100)
+new_block = Block(100, "01/01/1970", 100)
 
