@@ -41,18 +41,18 @@ class Bac_Chain(): #these are the actual blocks used for the transactions and th
                 return False
         return True , print("well done mrbacco, your chain is a valid blockchain ")
 
-bac = Bac_Chain() #new object from the Bac_Chain class
+bac_c = Bac_Chain() #new object from the Bac_Chain class
 
 def chains(blocks_to_add):
     for i in range(1, add):
-        bac.add_block(Block(1, date, 90879087))
+        bac_c.add_block(Block(add_i+i, date, add_d))
         time.sleep(1)
     return i
 
 add = int(input("please enter the number of blocks to create the blockhain: "))
 #add_b = int(input("please enter the number of blocks you want to generate: "))
-#add_i = int(input("please enter the starting index number: "))
-#add_d = str(input("please enter the data for each block: "))
+add_i = int(input("please enter the starting index number: "))
+add_d = str(input("please enter the data for each block: "))
 
 chains(add)
 
@@ -61,36 +61,34 @@ chains(add)
 add_b = int(input("please enter the number of blocks you want to generate: "))
 add_index = int(input("please enter the starting index number: "))
 add_data = str(input("please enter the data for each block: "))
-
 for i in range(1, add_b):
     bac.add_block(Block(add_index, date.datetime.now()))
-
-bac.add_block(Block(1, date, 90879087))
+bac_c.add_block(Block(1, date, 90879087))
 time.sleep(1)
-bac.add_block(Block(2, date, 9087))
+bac_c.add_block(Block(2, date, 9087))
 time.sleep(1)
-bac.add_block(Block(3, date, "text1"))
+bac_c.add_block(Block(3, date, "text1"))
 time.sleep(1)
-bac.add_block(Block(4, date, 66477))
+bac_c.add_block(Block(4, date, 66477))
 time.sleep(1)
-bac.add_block(Block(5, date, "text3"))
+bac_c.add_block(Block(5, date, "text3"))
 time.sleep(1)
 '''
 
 
 '''
 for i in range (100):
-    bac = bac.add_block(i)
+    bac_c = bac_c.add_block(i)
 bac
 '''
 
 
-for n in bac.chain:
+for n in bac_c.chain:
     print(n)
-print(bac.validate())
+print(bac_c.validate())
 
 
 file = open("results_chain.txt", mode ="w")
-for n in bac.chain:
+for n in bac_c.chain:
     file.write(str(n))
 file.close()
