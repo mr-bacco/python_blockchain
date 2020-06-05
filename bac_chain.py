@@ -2,6 +2,7 @@
 # this code implements a basic blockchain 
 # 
 # author: mrbacco 2019-2020
+#
 # this is the main file, which contains
 # the class that creates the chain from 
 # the blocks as per the other file named
@@ -50,7 +51,6 @@ def chains(blocks_to_add):
     return i
 
 add = int(input("please enter the number of blocks to create the blockhain: "))
-#add_b = int(input("please enter the number of blocks you want to generate: "))
 add_i = int(input("please enter the starting index number: "))
 add_d = str(input("please enter the data for each block: "))
 
