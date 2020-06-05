@@ -1,8 +1,12 @@
-###################################################
-# this code implements a basic blockchain program #
-# creaton of actual blockchain called bac_chain   #
-# author: and_bac 2019                            #
-###################################################
+##################################################
+# this code implements a basic blockchain 
+# 
+# author: mrbacco 2019-2020
+# this is the main file, which contains
+# the class that creates the chain from 
+# the blocks as per the other file named
+# bac_block.py
+##################################################
 
 import hashlib
 import json
@@ -46,9 +50,9 @@ def chains(blocks_to_add):
     return i
 
 add = int(input("please enter the number of blocks to create the blockhain: "))
-# add_b = int(input("please enter the number of blocks you want to generate: "))
-# add_i = int(input("please enter the starting index number: "))
-# add_d = str(input("please enter the data for each block: "))
+#add_b = int(input("please enter the number of blocks you want to generate: "))
+#add_i = int(input("please enter the starting index number: "))
+#add_d = str(input("please enter the data for each block: "))
 
 chains(add)
 
@@ -65,15 +69,14 @@ bac.add_block(Block(1, date, 90879087))
 time.sleep(1)
 bac.add_block(Block(2, date, 9087))
 time.sleep(1)
-bac.add_block(Block(3, date, "pippo"))
+bac.add_block(Block(3, date, "text1"))
 time.sleep(1)
 bac.add_block(Block(4, date, 66477))
 time.sleep(1)
-bac.add_block(Block(5, date, "ungabunga"))
+bac.add_block(Block(5, date, "text3"))
 time.sleep(1)
 '''
-#bac.chain[2].data = "pippo"
-#bac.chain[2].hash = bac.chain[2].hash_calc()
+
 
 '''
 for i in range (100):
@@ -85,3 +88,9 @@ bac
 for n in bac.chain:
     print(n)
 print(bac.validate())
+
+
+file = open("results_chain.txt", mode ="w")
+for n in bac.chain:
+    file.write(str(n))
+file.close()
