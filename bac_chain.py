@@ -88,7 +88,7 @@ for n in bac_c.chain:
 print(bac_c.validate())
 
 
-file = open("results_chain.txt", mode ="w")
+file = open("blockchain.txt", mode ="w")
 for n in bac_c.chain:
     file.write(str(n))
 file.close()
