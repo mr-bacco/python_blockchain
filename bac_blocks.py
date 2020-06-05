@@ -1,8 +1,12 @@
-###################################################
-# this code implements a basic blockchain program #
-# creaton of blocks                               #
-# author: and_bac 2019                            #
-###################################################
+##################################################
+# this code implements a basic blockchain 
+# 
+# author: mrbacco 2019-2020
+# 
+# this is the file that creates the class
+# that is gonna be used for the creation
+# of each block       
+##################################################
 
 import hashlib
 import json
@@ -27,11 +31,11 @@ class Block(): # generation of the class called Block, every block will be an in
             },
         ).encode() #needs to be encoded to be passed to the hash function
         return hashlib.sha3_256(hash_block).hexdigest() # creation of the hash from the block parameters as defined in the class
-    '''
+
     def printhashes(self):
         print("previous hash :", self.prev_hash)
         print("current hash :", self.hash)
-    '''
+
     def __str__(self): # returning the string representation of the objects so that when I print in the console I can read something
         string="index: " +str(self.index) +"\n"
         string+="timestamp; " +str(self.timestamp) +"\n"
@@ -40,5 +44,5 @@ class Block(): # generation of the class called Block, every block will be an in
         string+="hash: " +str(self.hash) +"\n"
         return string
 
-new_block = Block(100, "01/01/1970", 100)
-
+new_block = Block(1, "01/01/1970", 100)
+# print(str(new_block))
