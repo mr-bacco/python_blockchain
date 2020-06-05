@@ -82,12 +82,16 @@ for i in range (100):
 bac
 '''
 
+# printing the results, each block with values timestamp and hashes
+for n in bac_c.chain:
+    print(n)
+print(bac_c.validate())
 
 for n in bac_c.chain:
     print(n)
 print(bac_c.validate())
 
-
+# storing the results into a text file, each block with values timestamp and hashes
 file = open("blockchain.txt", mode ="w")
 for n in bac_c.chain:
     file.write(str(n))
